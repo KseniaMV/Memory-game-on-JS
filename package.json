@@ -1,0 +1,36 @@
+{
+  "name": "simplegameonjs",
+  "version": "1.0.0",
+  "description": "find thee same cards ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KseniaMV/simple-game-on-JS.git"
+  },
+  "keywords": [
+    "game",
+    "on",
+    "jacascript"
+  ],
+  "author": "KseniaMV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KseniaMV/simple-game-on-JS/issues"
+  },
+  "homepage": "https://github.com/KseniaMV/simple-game-on-JS#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
