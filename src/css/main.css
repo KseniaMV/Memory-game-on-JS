@@ -1,0 +1,82 @@
+@import url('../../components/game_plate/game_plate.css');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;  
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.7) 0%, rgba(253,187,45,1) 100%);
+    box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    color: rgba(34,193,195,1);
+    font-family: 'Acme', sans-serif;
+    /*font-family: 'Righteous', cursive;*/
+    word-spacing: 20px;
+   
+}
+
+button{
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 2rem;
+    font-family: 'Modak', cursive;
+    color: rgba(34,193,195,1);
+    box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(34,193,195,0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    border: 1px solid black;
+    position: relative;
+    top: 10%;
+}
+
