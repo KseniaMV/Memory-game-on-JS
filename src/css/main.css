@@ -74,6 +74,11 @@ main{
 .content{
     width: 60%;
     height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     border: 1px solid black;
     position: relative;
