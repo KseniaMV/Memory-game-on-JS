@@ -33,27 +33,24 @@ function turnCard(){
    cardFace.forEach(cardFace => {
        cardFace.addEventListener("click", (e)=>{
            let targetFace = e.target;
-           let targetBack = e.target.nextSibling;
+           let targetBack = targetFace.nextElementSibling;
+           console.log(targetBack);
            targetFace.style.transform = "rotateY(-180deg)";
-           targetBack.nextSibling.style.transform = "rotateY(0)";
+           targetBack.style.transform = "rotateY(0)";
+       })
+       
+   });
+
+    cardBack.forEach(cardBack => {
+       cardBack.addEventListener("click", (e)=>{
+           let targetBack = e.target;
+           let targetFace = e.target.previousElementSibling;
+           targetBack.style.transform = "rotateY(180deg)";
+           targetFace.style.transform = "rotateY(0)";
        })
        
    });
            
            
             
-}
-
-
-/*cardBack.addEventListener("click", function () { //animate rotation to front side
-    console.log("re");
-    cardFace.style.transform = "rotateY(0)";
-    cardBack.style.transform = "rotateY(180deg)";
-}
-
-cardFace.addEventListener("click", function () {
-    console.log("ds"); //animate rotation to front side
-    cardFace.style.transform = "rotateY(-180deg)"; //animate rotation to back side
-    cardBack.style.transform = "rotateY(0)";
-
-});*/
+};
