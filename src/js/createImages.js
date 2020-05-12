@@ -71,7 +71,7 @@ function getImages(url) {
                cardsConteiner.append(card);
                let cardFace = document.createElement("div");
                cardFace.classList.add("card_face");
-               cardFace.classList.add(`${element.id}`);
+               cardFace.setAttribute("data-name", `${element.id}`);
                card.append(cardFace);
                let cardBack = document.createElement("div");
                cardBack.classList.add("card_back");
@@ -83,7 +83,8 @@ function getImages(url) {
    };
 
 /*function that turns card back on click*/
-   function turnCard() {
+
+  /* function turnCard() {
     let cardBack = document.querySelectorAll(".card_back");
     let cardFace = document.querySelectorAll(".card_face");
     cardFace.forEach(cardFace => {
@@ -108,7 +109,7 @@ function getImages(url) {
 
 
 
-};
+};*/
 
 /*time count back*/
 
