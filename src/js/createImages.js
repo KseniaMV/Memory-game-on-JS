@@ -82,37 +82,6 @@ function getImages(url) {
        };  
    };
 
-/*function that turns card back on click*/
-
-  /* function turnCard() {
-    let cardBack = document.querySelectorAll(".card_back");
-    let cardFace = document.querySelectorAll(".card_face");
-    cardFace.forEach(cardFace => {
-        cardFace.addEventListener("click", (e) => {
-            let targetFace = e.target;
-            let targetBack = targetFace.nextElementSibling;
-            targetFace.style.transform = "rotateY(-180deg)";
-            targetBack.style.transform = "rotateY(0)";
-        })
-
-    });
-
-    cardBack.forEach(cardBack => {
-        cardBack.addEventListener("click", (e) => {
-            let targetBack = e.target;
-            let targetFace = e.target.previousElementSibling;
-            targetBack.style.transform = "rotateY(180deg)";
-            targetFace.style.transform = "rotateY(0)";
-        })
-
-    });
-
-
-
-};*/
-
-/*time count back*/
-
 function timeOut(){
     let timeCount = 60;
     let timeCountTime = document.querySelector(".timeCount_time");
