@@ -16,18 +16,20 @@ function game(){
                 let targetFace = e.target;
                 turnCard(targetFace);
                 getDataName(targetFace, cardsDataName);
-                clickcount++;
+                    clickcount++;
+               
             }
-            if(clickcount == 2){
-                return new Promise((resolve, reject)=>{
-                    setTimeout(() => {
-                        checkDataName(cardsDataName, clickcount);
-                       
-                    }, 1000);
-                    resolve();
-                }).then(clickcount = 0);
-                
-                    
+            if(cardsDataName.length == 2){
+                setTimeout(() => {
+                     checkDataName(cardsDataName);
+                }, 500);
+                setTimeout(() => {
+                    clickcount = 0;
+               }, 600);
+
+               
+
+                              
             }
         })   
     })
