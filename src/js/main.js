@@ -17,7 +17,7 @@ function letsPlay() {
         previouscontent.forEach(element => {
             element.remove();
         });
-        getPage('components/game_plate/game_plate.html').then(getImages).then(shuffle).then(createCards).then(turnCard).then(timeOut);
+        getPage('components/game_plate/game_plate.html').then(getImages).then(shuffle).then(createCards).then(timeOut).then(game);
     });
 
 };
