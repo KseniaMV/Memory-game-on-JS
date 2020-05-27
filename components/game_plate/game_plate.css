@@ -1,7 +1,7 @@
 
 .cards_conteiner{
     width: 90%;
-    height: 90%;
+    height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 150px);
@@ -12,8 +12,8 @@
 }
 
 .card{
-    width: 90%;
-    height: 90%;
+    width: 150px;
+    height: 180px;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +41,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
+    background-image: url('../../src/images/cards.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .card_back{
@@ -55,7 +58,9 @@
     transform-style: preserve-3d;
     transform: rotateY(180deg);
     z-index: 10;
-    background-color: brown;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 

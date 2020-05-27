@@ -2,28 +2,28 @@
 function getImages(url) {
     const imagesUrl = {
         star:{
-            url: "src/images/star.jpg",
-            id: "star"
+            url: "src/images/cards/cactus.png",
+            id: "cactus"
         },
         arrow:{
-            url: "src/images/arrow.jpg",
-            id: "arrow"
+            url: "src/images/cards/cat.png",
+            id: "cat"
         },
         corcle:{
-            url: "src/images/circle.jpg",
-            id: "circle"
+            url: "src/images/cards/dino.png",
+            id: "dino"
         },
         heart:{
-            url: "src/images/heart.jpg",
-            id: "heart"
+            url: "src/images/cards/ghost.png",
+            id: "ghost"
         },
         light:{
-            url: "src/images/light.jpg",
-            id: "light"
+            url: "src/images/cards/icecream.png",
+            id: "icecream"
         },
         treangle:{
-            url: "src/images/treangle.jpg",
-            id: "treangle"
+            url: "src/images/cards/rabbit.png",
+            id: "rabbit"
         }
     
     };

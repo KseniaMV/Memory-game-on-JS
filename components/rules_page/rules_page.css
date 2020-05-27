@@ -8,6 +8,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
     
 }
 
@@ -17,9 +19,8 @@
     padding: 0;
     font-size: 4rem;
     font-family: 'Acme', sans-serif;
-    /*font-family: 'Righteous', cursive;*/
     word-spacing: 20px;
-    color: rgba(222, 233, 76, 0.9);
+    color: rgba(221, 60, 173, 0.9);
 }
 
 .game_rules_greeting{
@@ -53,4 +54,7 @@
 .game_rules_list li:last-child{
     list-style: none;
     text-align: center;
+}
+.game_rules_button-go{
+    color: rgba(221, 60, 173, 0.9);
 }
