@@ -1,8 +1,11 @@
 @import url('../../components/game_plate/game_plate.css');
 @import url('../../components/rules_page/rules_page.css');
+@import url('../../components/win_page/win_page.css');
+@import url('../../components/lose_page/lose_page.css');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 *{
     margin: 0;
@@ -44,8 +47,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(221, 60, 173, 0.7) 0%, rgb(231, 228, 25) 100%);
+    background-color: rgba(255,255,255,0.5);
+   /* background: rgb(34,193,195);*/
+    /*background: linear-gradient(0deg, rgba(221, 60, 173, 0.7) 0%, rgb(231, 228, 25) 100%);*/
     box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
     z-index: 1;
 }

@@ -16,6 +16,7 @@ function letsPlay() {
         let previouscontent = gameContent.childNodes;
         previouscontent.forEach(element => {
             element.remove();
+            gameContent.style.backgroundImage = "none";  //delete image with game template from main page
         });
         getPage('components/game_plate/game_plate.html').then(getImages).then(shuffle).then(createCards).then(timeOut).then(game);
     });

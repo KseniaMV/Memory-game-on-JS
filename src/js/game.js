@@ -1,10 +1,4 @@
-/*
-1 - сформировать список из выбранных эелементов
-2 - получить их имена
-3 - сравнить их имена
-4- пока имена сравнисваются, запретить выполение клика
-5 - после сравнения выполняется действие либо затемнить похожие карты либо перевернуть не совпавшие
-6 - очисть списки*/
+let score = 0;
 
 function game(){
     let cardsDataName = [];
@@ -54,11 +48,19 @@ function checkDataName(array){
         let firstCard = array[0];
         let secondCard = array[1];
         if (firstCard === secondCard) {
+            score += 1;
+            document.querySelector(".score_count").innerHTML = score;
             selectedCards.forEach(element => {
                 element.style.filter = "brightness(15%)";
                 element.classList.remove("selectedCard");
             });
             array.splice(0, 2);
+            if(score == 1){       //dont forget to change to 6!!!!
+                setTimeout(() => {
+                    win();
+                }, 1000);
+                
+            }
 
         }else{
             selectedCards.forEach(element => {
@@ -74,8 +76,8 @@ function checkDataName(array){
                 array.splice(0, 2);
             });
         };
-    }
-        
+    };
+       
     
 
 
