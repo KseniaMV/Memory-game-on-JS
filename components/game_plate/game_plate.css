@@ -34,7 +34,7 @@
     left: 0;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: 0.2s;
+    transition: 0.5s;
     z-index: 100;
     font-family: 'Modak', cursive;
     font-size: 4rem;
@@ -54,7 +54,7 @@
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
     z-index: 10;
@@ -81,7 +81,7 @@
     color: rgb(255, 255, 255); 
     background-color: rgb(10, 6, 46);
     backface-visibility: hidden;
-    transition: 3s;
+    transition: 0.3s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
     z-index: 10;

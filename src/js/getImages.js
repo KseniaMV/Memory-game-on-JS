@@ -37,9 +37,7 @@ function getImages(url) {
             };
         };
         let doubleImagesArray = elements.concat(elements);
-        
         cardImages = doubleImagesArray;
-      
         resolve(cardImages);
         reject(this.status + "" + this.statusText);
                 
@@ -76,16 +74,29 @@ function getImages(url) {
                let cardBack = document.createElement("div");
                cardBack.classList.add("card_back");
                cardBack.style.backgroundImage = `url(${element.url})`;
-               cardBack.innerHTML = "back";
                cardFace.after(cardBack)    
            };
        };  
    };
 
 function timeOut(){
-    let timeCount = 60;
-    let timeCountTime = document.querySelector(".timeCount_time");
-        setInterval(() => {
+    let timeCount = 30;
+        let timeCountTime = document.querySelector(".timeCount_time");
+        let time = setInterval(() => {
             timeCountTime.innerHTML = --timeCount;
+            if(score == 6){
+                clearInterval(time);
+            };
+            if(timeCount == 0){
+                timeCount = 0;
+                timeCountTime.innerHTML = timeCount;
+                let background = document.querySelector(".background");
+                background.style.backgroundImage = "url('src/images/background/lose.png')";
+                background.style.backgroundSize = "500px";
+                getPage("components/lose_page/lose_page.html").then(tryAgain); /* tryAgain() in file lose.js*/
+                      
+            }
+            
         }, 1000);
+  
 };
