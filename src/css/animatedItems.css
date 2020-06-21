@@ -1,0 +1,138 @@
+.animated_item_conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.animated_items{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.balloon, .sad_smile{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    
+}
+
+.animated_items_left{
+    position: absolute;
+    top: 0;
+    left: 5%;
+   
+}
+
+.animated_items_right{
+    position: absolute;
+    top: 0;
+    left: calc(80% - 150px);
+    
+}
+
+.animate_fly{
+    animation: fly 6s linear infinite;
+}
+
+.animate_fly2{
+    animation: fly 5s linear infinite;
+}
+
+
+.balloon:nth-child(1){
+    background-image: url("../images/balloon1.png");
+}
+.balloon:nth-child(2){
+    background-image: url("../images/balloon2.png");
+}
+.balloon:nth-child(3){
+    background-image: url("../images/balloon3.png");
+}
+.balloon:nth-child(4){
+    background-image: url("../images/balloon4.png");
+}
+.balloon:nth-child(5){
+    background-image: url("../images/balloon5.png");
+}
+.balloon:nth-child(6){
+    background-image: url("../images/balloon6.png");
+}
+.sad_smile{
+    background-image: url("../images/sadSmile.png");
+}
+
+@keyframes fly{
+ 0%{
+    transform: translate(0,0);
+ }
+ 20%{
+    transform: translate(25%,-20%);
+ }
+ 30%{
+    transform: translate(0%,-40%);
+ }
+ 40%{
+    transform: translate(-40%,-60%);
+ }
+ 50%{
+    transform: translate(0%,-80%);
+ }
+ 60%{
+    transform: translate(25%,-100%);
+ }
+70%{
+    transform: translate(0%,-120%);
+ }
+80%{
+    transform: translate(-35%,-140%);
+ }
+ 100%{
+    transform: translate(0,-180%);
+ }
+ 
+}
+
+@keyframes fly2{
+    0%{
+       transform: translate(0,0);
+    }
+    20%{
+       transform: translate(-35%,-20%);
+    }
+    30%{
+       transform: translate(0%,-40%);
+    }
+    40%{
+       transform: translate(35%,-60%);
+    }
+    50%{
+       transform: translate(0%,-80%);
+    }
+    60%{
+       transform: translate(-45%,-100%);
+    }
+   70%{
+       transform: translate(0%,-120%);
+    }
+   80%{
+       transform: translate(15%,-140%);
+    }
+    100%{
+       transform: translate(0,-180%);
+    }
+    
+   }

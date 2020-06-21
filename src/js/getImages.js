@@ -93,7 +93,7 @@ function timeOut(){
                 let background = document.querySelector(".background");
                 background.style.backgroundImage = "url('src/images/background/lose.png')";
                 background.style.backgroundSize = "500px";
-                getPage("components/lose_page/lose_page.html").then(tryAgain); /* tryAgain() in file lose.js*/
+                getPage("components/lose_page/lose_page.html").then(loseSadSmileAnimation).then(tryAgain); /* tryAgain() in file lose.js*/
                       
             }
             

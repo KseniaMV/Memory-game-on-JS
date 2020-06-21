@@ -1,0 +1,74 @@
+.game_rules{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
+            box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
+    
+}
+
+.game_rules_title{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+    word-spacing: 20px;
+    color: rgba(221, 60, 173, 0.9);
+}
+
+.game_rules_greeting{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    color:  rgba(34,193,195,1);
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.game_rules_list{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    color: rgba(34,193,195,1);
+    letter-spacing: 2px;
+    word-spacing: 10px;
+
+}
+
+
+.game_rules_list li:last-child{
+    margin-top: 50px;
+    margin-left:-3%;
+    list-style: none;
+    text-align: center;
+}
+.game_rules_button-go{
+    color: rgba(221, 60, 173, 0.9);
+}

@@ -1,0 +1,1 @@
+"use strict";function loseSadSmileAnimation(){var e=Array.from(document.querySelectorAll(".sad_smile_left")),l=Array.from(document.querySelectorAll(".sad_smile_right"));animateBallons(e),animateBallons(l)}

@@ -1,4 +1,4 @@
-/*section is downloaded by timeOut() in gameImages.js*/
+/*section is downloaded by timeOut() in getImages.js*/
 
 /*function returns to the game page*/
 function tryAgain(){

@@ -11,15 +11,15 @@ const
 
 const paths = {
   styles: {
-    src: "src/css/main.css",
-    dest: "dist/src/css"
+    src: ["src/css/*.css, components/**/*.css"],
+    dest: "dist/components"
   },
   js:{
       src: "src/js/*.js",
       dest: "dist/src/js"
   },
   html: {
-    src: "./*.html"
+    src: ["components/**/*.html"]
   }
 };
 
@@ -66,9 +66,9 @@ function watch(){
 function htmlBuild(){
     return(
     gulp
-    .src("index.html")
+    .src(paths.html.src)
     .pipe(htmlmin())
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("dist/components"))
    )
 }
 
@@ -78,7 +78,7 @@ function reload() {
 
 function image() {
     return gulp
-      .src("src/images/**/*.png")
+      .src("src/images/**/*.+(png|jpg)")
       .pipe(
         imagemin()
       )
