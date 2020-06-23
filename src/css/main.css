@@ -48,8 +48,6 @@ header{
     justify-content: center;
     align-content: center;
     background-color: rgba(255,255,255,0.5);
-   /* background: rgb(34,193,195);*/
-    /*background: linear-gradient(0deg, rgba(221, 60, 173, 0.7) 0%, rgb(231, 228, 25) 100%);*/
     box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -82,9 +80,9 @@ button:hover{
 
 main{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     position: absolute;
-    top: 0;
+    top: 20vh;
     left: 0;
     display: flex;
     flex-direction: row;
@@ -102,7 +100,7 @@ footer{
 }
 .content{
     width: 60%;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -110,10 +108,68 @@ footer{
     align-items: center;
     margin: auto;
     position: relative;
-    top: 10%;
+    top: 5vh;
     background-image: url('../images/main.png');
     background-position: center;
     background-size: 360px;
     background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1200px){
+    .content{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1060px){
+    .content{
+        background-size: 500px;
+    }
+    h1{
+        font-size: 3.5rem; 
+    }
+    
+
+}
+@media screen and (max-width: 800px){
+    .content{
+        background-size: 400px;
+    }
+    h1{
+        font-size: 3rem; 
+    }
+    .button_start_game{
+        height: 50px;
+        font-size: 2rem;
+    }
+    
+
+}
+@media screen and (max-width: 440px){
+    .content{
+        background-size: 300px;
+    }
+    h1{
+        font-size: 1.8rem; 
+    }
+    .button_start_game{
+        width: 150px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 380px){
+    .content{
+        background-size: 300px;
+    }
+    h1{
+        font-size: 2rem; 
+    }
+
 }
 

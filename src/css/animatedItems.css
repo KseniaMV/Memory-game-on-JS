@@ -136,3 +136,30 @@
     }
     
    }
+
+   @media screen and (max-width: 1200px){
+        .balloon, .sad_smile{
+            background-size: 50%;   
+        }
+   }
+   
+   @media screen and (max-width: 450px){
+    .balloon, .sad_smile{
+        background-size: 80%;   
+    }
+    .animated_item{
+        width: 20%;
+    }
+    .animated_items_left{
+        left: 5%;
+    }
+
+    .animated_items_right{
+        left: 75%;
+    }
+    .home_button{
+        position: relative;
+        top: -20vh;
+
+    }
+}

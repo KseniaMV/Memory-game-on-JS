@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -62,3 +62,85 @@
 .game_rules_button-go{
     color: rgba(221, 60, 173, 0.9);
 }
+
+@media screen and (max-width: 1200px){
+    .game_rules_title{
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    
+    .game_rules_greeting{
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        word-spacing: 10px;
+    }
+    
+    .game_rules_list{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        word-spacing: 10px;
+    }
+
+    .game_rules_list li:last-child{
+        margin-top: 30px;
+    }
+    .game_rules_button-go{
+        width: 200px;
+        height: 50px;
+        font-size: 1.5rem;
+        color: rgba(221, 60, 173, 0.9);
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .game_rules_title{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    .game_rules_greeting{
+        margin-bottom: 30px;
+        font-size: 1.6rem;
+    } 
+    .game_rules_list{
+        font-size: 1.6rem;
+    }
+    .game_rules_list li:last-child{
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width: 440px){
+    .game_rules_title{
+        font-size: 2rem;
+    }
+    .game_rules_greeting{
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    } 
+    .game_rules_list{
+        font-size: 1.1rem;
+    }
+    .game_rules_list li:last-child{
+        margin-top: 20px;
+    }
+
+}
+@media screen and (max-width: 380px){
+    .game_rules_title{
+        margin-bottom: 10px;
+    }
+    .game_rules_greeting{
+        margin-bottom: 10px;
+        font-size: 1rem;
+    } 
+    .game_rules_list{
+        font-size: 1rem;
+    }
+    .game_rules_list li:last-child{
+        margin-top: 20px;
+    }
+
+}
+

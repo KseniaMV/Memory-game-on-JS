@@ -23,3 +23,15 @@
     text-shadow: 0 5px 5px rgba(0,0,0,.5);
     background-color: rgba(255,255,255,.7);
 }
+
+
+@media screen and (max-width: 450px){
+    .losePage_title{
+        height: 50%;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .lose_button{
+        margin-top:200px;
+    }
+}
