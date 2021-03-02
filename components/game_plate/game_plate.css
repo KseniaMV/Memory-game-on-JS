@@ -1,4 +1,3 @@
-
 .cards_conteiner{
     width: 90%;
     height: auto;
@@ -8,7 +7,6 @@
     grid-template-rows: repeat(3, 180px);
     grid-gap: 10px;
     justify-content: center;
-
 }
 
 .card{
@@ -23,7 +21,6 @@
     transition: 3s;
     perspective: 1000px;
     transform-style: preserve-3d;
-
 }
 
 .card_face{
@@ -63,8 +60,6 @@
     background-repeat: no-repeat;
 }
 
-
-
 .cards_back{
     width: 100%;
     height: 100%;
@@ -85,7 +80,6 @@
     transform-style: preserve-3d;
     transform: rotateY(180deg);
     z-index: 10;
-   
 }
 
 .timeCount, .score{
@@ -99,20 +93,21 @@
     justify-content: center;
     align-content: center;
 }
+
 .score{
     left: 0;
 }
 
-.timeCount_title, .timeCount_time, .score_title, .score_count{
+.timeCount_title, 
+.timeCount_time, 
+.score_title, 
+.score_count{
     width: 100%;
     height: 50%;
-    margin: 0;
-    padding: 0;
     font-size: 3rem;
     font-family: 'Acme', sans-serif;
     text-align: center;
     color: rgb(109, 156, 27);
-
 }
 
 @media screen and (max-width: 1200px){
@@ -126,70 +121,33 @@
         width: 100px;
         height: 130px;
     }
-    
-}
-
-@media screen and (max-width: 1060px){
-    .cards_conteiner{
-        height: 80%;
-        top: 20%;
-
-    }
-    .card{
-        width: 100px;
-        height: 130px;
-    }
-    
 }
 
 @media screen and (max-width: 800px){
     .cards_conteiner{
         height: 80%;
-        padding-top: 30%;
-
+        padding-top: 20px;
     }
     .card{
         width: 100px;
         height: 130px;
     }
-    
-}
-
-@media screen and (max-width: 440px){
-    .cards_conteiner{
-        height: 80%;
-        padding-top: 30%;
-        grid-template-columns: repeat(4, 80px);
-        grid-template-rows: repeat(3, 110px);
-
-    }
-    .card{
-        width: 80px;
-        height: 110px;
-    }
     .timeCount, .score{
-        width: 50vw;
-        height: 100px;
+        margin-top: 80px;
+        height: auto;
     }
-    .timeCount_title, .timeCount_time, .score_title, .score_count{
-        font-size: 1.5rem;
-    }
-    
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 380px){
     .cards_conteiner{
         grid-template-columns: repeat(4, 70px);
         grid-template-rows: repeat(3, 100px);
-
     }
     .card{
         width: 70px;
         height: 100px;
     }
-  
     .timeCount_title, .timeCount_time, .score_title, .score_count{
         font-size: 1.2rem;
-    }
-    
+    } 
 }

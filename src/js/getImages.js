@@ -39,45 +39,43 @@ function getImages(url) {
         let doubleImagesArray = elements.concat(elements);
         cardImages = doubleImagesArray;
         resolve(cardImages);
-        reject(this.status + "" + this.statusText);
-                
+        reject(this.status + "" + this.statusText); 
     });
 
 };
 
 /*function that shuffles 12 images*/
-
     function shuffle(){
         for (let i = cardImages.length - 1; i > 0; i--){
-           let randomNumber = Math.floor(Math.random() * (i + 1)) //случайный индек от 0 до i
-           let currentnumber = cardImages[i];
-           cardImages[i] = cardImages[randomNumber];
-           cardImages[randomNumber] = currentnumber;
-       }
-   };
+            let randomNumber = Math.floor(Math.random() * (i + 1)) //случайный индек от 0 до i
+            let currentnumber = cardImages[i];
+            cardImages[i] = cardImages[randomNumber];
+            cardImages[randomNumber] = currentnumber;
+        }
+    };
 
 
 /*function that creates 12 cards*/
 
-   function createCards(){
+    function createCards(){
     let cardsConteiner = document.querySelector(".cards_conteiner");
-       for (const key in cardImages) {
-           if (cardImages.hasOwnProperty(key)) {
-               const element =cardImages[key];
-               let card = document.createElement("div");
-               card.classList.add("card");
-               cardsConteiner.append(card);
-               let cardFace = document.createElement("div");
-               cardFace.classList.add("card_face");
-               cardFace.setAttribute("data-name", `${element.id}`);
-               card.append(cardFace);
-               let cardBack = document.createElement("div");
-               cardBack.classList.add("card_back");
-               cardBack.style.backgroundImage = `url(${element.url})`;
-               cardFace.after(cardBack)    
-           };
-       };  
-   };
+        for (const key in cardImages) {
+            if (cardImages.hasOwnProperty(key)) {
+                const element =cardImages[key];
+                let card = document.createElement("div");
+                card.classList.add("card");
+                cardsConteiner.append(card);
+                let cardFace = document.createElement("div");
+                cardFace.classList.add("card_face");
+                cardFace.setAttribute("data-name", `${element.id}`);
+                card.append(cardFace);
+                let cardBack = document.createElement("div");
+                cardBack.classList.add("card_back");
+                cardBack.style.backgroundImage = `url(${element.url})`;
+                cardFace.after(cardBack)    
+            };
+        };  
+    };
 
 function timeOut(){
     let timeCount = 30;
@@ -94,9 +92,7 @@ function timeOut(){
                 background.style.backgroundImage = "url('src/images/background/lose.png')";
                 background.style.backgroundSize = "500px";
                 getPage("components/lose_page/lose_page.html").then(loseSadSmileAnimation).then(tryAgain); /* tryAgain() in file lose.js*/
-                      
             }
             
         }, 1000);
-  
 };

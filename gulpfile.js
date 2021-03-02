@@ -8,10 +8,9 @@ const
   babel         = require("gulp-babel"),
   htmlmin       = require("gulp-htmlmin");
 
-
 const paths = {
   styles: {
-    src: ["src/css/*.css, components/**/*.css"],
+    src: ["components/**/*.css"],
     dest: "dist/components"
   },
   js:{
@@ -19,10 +18,9 @@ const paths = {
       dest: "dist/src/js"
   },
   html: {
-    src: ["components/**/*.html"]
+    src: ["./*.html"]
   }
 };
-
 
 function style(){
   return(
@@ -34,8 +32,6 @@ function style(){
   );
 
 };
-
-
 
 function javaScriptBuild(){
     return(
@@ -68,7 +64,7 @@ function htmlBuild(){
     gulp
     .src(paths.html.src)
     .pipe(htmlmin())
-    .pipe(gulp.dest("dist/components"))
+    .pipe(gulp.dest("dist"))
    )
 }
 
@@ -84,7 +80,6 @@ function image() {
       )
       .pipe(gulp.dest("dist/src/images"));
   }
-
 
 
 const watchFiles = gulp.parallel(image, watch, javaScriptBuild, htmlBuild);

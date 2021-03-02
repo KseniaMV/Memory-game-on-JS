@@ -41,7 +41,7 @@
 }
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 380px){
     .losePage_title{
         height: 50%;
         font-size: 2rem;

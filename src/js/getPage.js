@@ -1,4 +1,3 @@
-
 /*function that create a xmlhttprequest and download a page*/
 function getPage(url) {
     return new Promise((resolve, reject) => {

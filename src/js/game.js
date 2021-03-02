@@ -22,7 +22,6 @@ function game(){
                     }).then(()=>check = false);   
                 } 
             });
-
         });
     }
 }
@@ -33,7 +32,6 @@ function turnCard(element){
     targetBack.style.transform = "rotateY(0)";
     element.classList.add("selectedCard");
     targetBack.classList.add("selectedCard");
-
 };
 
 function getDataName(element, array){
@@ -58,7 +56,6 @@ function checkDataName(array){
                     win();    /*win.js*/
                 }, 500);    
             }
-        
         }else{
             selectedCards.forEach(element => {
                     if (element.classList.contains("card_face")) {
@@ -73,7 +70,6 @@ function checkDataName(array){
             });
         };
     };
-       
-    
+
 
 

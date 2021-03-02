@@ -1,24 +1,18 @@
 .game_rules{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin: auto;
-    padding: 0;
+    width: 90%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     box-shadow:  0 10px 20px 2px rgba(0,0,0,0.2);
-    
 }
 
 .game_rules_title{
-    text-align: center;
-    margin: 0;
     margin-bottom: 30px;
-    padding: 0;
-    font-size: 4rem;
+    text-align: center;
+    font-size: 3rem;
     font-family: 'Acme', sans-serif;
     word-spacing: 20px;
     color: rgba(221, 60, 173, 0.9);
@@ -26,12 +20,10 @@
 
 .game_rules_greeting{
     width: 90%;
-    height: auto;
     margin-left: 5%;
     margin-bottom: 30px;
-    padding: 0;
     font-family: 'Acme', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: left;
     color:  rgba(34,193,195,1);
     letter-spacing: 2px;
@@ -40,18 +32,14 @@
 
 .game_rules_list{
     width: 90%;
-    height: auto;
     margin-left: 5%;
-    padding: 0;
     font-family: 'Acme', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: left;
     color: rgba(34,193,195,1);
     letter-spacing: 2px;
     word-spacing: 10px;
-
 }
-
 
 .game_rules_list li:last-child{
     margin-top: 50px;
@@ -59,75 +47,16 @@
     list-style: none;
     text-align: center;
 }
+
 .game_rules_button-go{
     color: rgba(221, 60, 173, 0.9);
 }
 
-@media screen and (max-width: 1200px){
-    .game_rules_title{
-        margin-bottom: 20px;
-        font-size: 3rem;
-    }
-    
-    .game_rules_greeting{
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-        letter-spacing: 0;
-        word-spacing: 10px;
-    }
-    
-    .game_rules_list{
-        font-size: 1.5rem;
-        letter-spacing: 0;
-        word-spacing: 10px;
-    }
 
-    .game_rules_list li:last-child{
-        margin-top: 30px;
-    }
-    .game_rules_button-go{
-        width: 200px;
-        height: 50px;
-        font-size: 1.5rem;
-        color: rgba(221, 60, 173, 0.9);
-    }
-
-}
-
-@media screen and (max-width: 800px){
-    .game_rules_title{
-        margin-bottom: 30px;
-        font-size: 3rem;
-    }
-    .game_rules_greeting{
-        margin-bottom: 30px;
-        font-size: 1.6rem;
-    } 
-    .game_rules_list{
-        font-size: 1.6rem;
-    }
-    .game_rules_list li:last-child{
-        margin-top: 30px;
-    }
-
-}
-@media screen and (max-width: 440px){
-    .game_rules_title{
-        font-size: 2rem;
-    }
-    .game_rules_greeting{
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    } 
-    .game_rules_list{
-        font-size: 1.1rem;
-    }
-    .game_rules_list li:last-child{
-        margin-top: 20px;
-    }
-
-}
 @media screen and (max-width: 380px){
+    .game_rules{
+        width: 100%;
+    }
     .game_rules_title{
         margin-bottom: 10px;
     }
@@ -137,9 +66,10 @@
     } 
     .game_rules_list{
         font-size: 1rem;
+        list-style-position: inside;
     }
     .game_rules_list li:last-child{
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
 }
