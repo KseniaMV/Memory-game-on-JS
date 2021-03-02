@@ -36,7 +36,8 @@
     "imagemin-pngquant": "^9.0.1",
     "mozjpeg": "^7.0.0",
     "optipng-bin": "^7.0.0",
-    "pngquant-bin": "^6.0.0"
+    "pngquant-bin": "^6.0.0",
+    "socket.io": ">=2.4.0"
   },
   "dependencies": {}
 }
