@@ -7,6 +7,12 @@
 + Turn two cards one by one by clicking on them
 + If you find the same card you get 1 score, if you find all cards at the set time - you win
 
+## development stack
++ HTML
++ CSS
++ JS
++ Gulp
+
 [lets play](https://memory-game-on-js.netlify.app/)
 
 
